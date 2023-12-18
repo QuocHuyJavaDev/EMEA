@@ -1,0 +1,305 @@
+is_global = true
+build_property.TargetFramework = net6.0-android31.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EMEA
+build_property.ProjectDir = C:\Users\QUOCHUY\source\repos\EMEA\EMEA\
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Calendars/DTAddEvent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Calendars.DTAddEvent.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Calendars\DTAddEvent.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Calendars\DTAddEvent.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Calendars/DTEditEvent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Calendars.DTEditEvent.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Calendars\DTEditEvent.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Calendars\DTEditEvent.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Calendars/DTSchedule.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Calendars.DTSchedule.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Calendars\DTSchedule.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Calendars\DTSchedule.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Category/DTHomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Category.DTHomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Category\DTHomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Category\DTHomePage.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Category/DTMe.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Category.DTMe.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Category\DTMe.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Category\DTMe.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Category/DTReminder.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Category.DTReminder.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Category\DTReminder.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Category\DTReminder.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Category/NewPage2.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Category.NewPage2.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Category\NewPage2.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Category\NewPage2.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/DTShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.DTShell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\DTShell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\DTShell.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Note/DTAddNotebook.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Note.DTAddNotebook.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Note\DTAddNotebook.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Note\DTAddNotebook.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Note/DTAllDetail.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Note.DTAllDetail.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Note\DTAllDetail.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Note\DTAllDetail.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Note/DTAllNote.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Note.DTAllNote.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Note\DTAllNote.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Note\DTAllNote.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Note/DTEditNotebook.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Note.DTEditNotebook.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Note\DTEditNotebook.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Note\DTEditNotebook.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Note/DTNotebook.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Note.DTNotebook.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Note\DTNotebook.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Note\DTNotebook.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Note/DTNoteDetail.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Note.DTNoteDetail.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Note\DTNoteDetail.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Note\DTNoteDetail.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Note/DTNoteHome.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Note.DTNoteHome.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Note\DTNoteHome.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Note\DTNoteHome.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/Note/DTNoteList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.Note.DTNoteList.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\Note\DTNoteList.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\Note\DTNoteList.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/SigninRegis/DTDetailInfor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.SigninRegis.DTDetailInfor.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\SigninRegis\DTDetailInfor.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\SigninRegis\DTDetailInfor.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/SigninRegis/DTLogin.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.SigninRegis.DTLogin.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\SigninRegis\DTLogin.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\SigninRegis\DTLogin.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/SigninRegis/DTPinCode.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.SigninRegis.DTPinCode.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\SigninRegis\DTPinCode.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\SigninRegis\DTPinCode.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/SigninRegis/DTRegister.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.SigninRegis.DTRegister.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\SigninRegis\DTRegister.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\SigninRegis\DTRegister.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/TodoList/DTTask.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.TodoList.DTTask.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\TodoList\DTTask.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\TodoList\DTTask.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Desktop/TodoList/DTTodo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Desktop.TodoList.DTTodo.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Desktop\TodoList\DTTodo.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Desktop\TodoList\DTTodo.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/Category/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.Category.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\Category\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\Category\HomePage.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/Category/Me.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.Category.Me.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\Category\Me.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\Category\Me.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/Category/NewPage1.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.Category.NewPage1.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\Category\NewPage1.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\Category\NewPage1.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/Category/Reminder.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.Category.Reminder.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\Category\Reminder.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\Category\Reminder.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/MbShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.MbShell.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\MbShell.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\MbShell.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/Note/MBAddNotebook.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.Note.MBAddNotebook.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\Note\MBAddNotebook.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\Note\MBAddNotebook.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/Note/MBEditNotebook.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.Note.MBEditNotebook.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\Note\MBEditNotebook.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\Note\MBEditNotebook.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/Note/MBNotebook.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.Note.MBNotebook.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\Note\MBNotebook.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\Note\MBNotebook.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/Note/MBNoteDetail.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.Note.MBNoteDetail.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\Note\MBNoteDetail.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\Note\MBNoteDetail.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/Note/MBNoteHome.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.Note.MBNoteHome.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\Note\MBNoteHome.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\Note\MBNoteHome.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/Note/MBNoteList.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.Note.MBNoteList.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\Note\MBNoteList.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\Note\MBNoteList.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/Schedules/MBAddEvent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.Schedules.MBAddEvent.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\Schedules\MBAddEvent.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\Schedules\MBAddEvent.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/Schedules/MBEditEvent.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.Schedules.MBEditEvent.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\Schedules\MBEditEvent.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\Schedules\MBEditEvent.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/Schedules/MBSchedule.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.Schedules.MBSchedule.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\Schedules\MBSchedule.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\Schedules\MBSchedule.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/SigninResgis/Detail_Infor.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.SigninResgis.Detail_Infor.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\SigninResgis\Detail_Infor.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\SigninResgis\Detail_Infor.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/SigninResgis/Forgot.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.SigninResgis.Forgot.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\SigninResgis\Forgot.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\SigninResgis\Forgot.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/SigninResgis/Intro.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.SigninResgis.Intro.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\SigninResgis\Intro.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\SigninResgis\Intro.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/SigninResgis/Register.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.SigninResgis.Register.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\SigninResgis\Register.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\SigninResgis\Register.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/SigninResgis/SetPinCode.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.SigninResgis.SetPinCode.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\SigninResgis\SetPinCode.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\SigninResgis\SetPinCode.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/SigninResgis/Signin.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.SigninResgis.Signin.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\SigninResgis\Signin.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\SigninResgis\Signin.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/TodoList/MBTask.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.TodoList.MBTask.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\TodoList\MBTask.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\TodoList\MBTask.xaml
+
+[C:/Users/QUOCHUY/source/repos/EMEA/EMEA/UI/Mobile/TodoList/MBTodo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = EMEA.UI.Mobile.TodoList.MBTodo.xaml
+build_metadata.AdditionalFiles.TargetPath = UI\Mobile\TodoList\MBTodo.xaml
+build_metadata.AdditionalFiles.RelativePath = UI\Mobile\TodoList\MBTodo.xaml

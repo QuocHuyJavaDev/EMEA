@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EMEA.UI.Mobile.TodoList.MBTodo"
+             Shell.TabBarIsVisible="False"
+             xmlns:viewModels="clr-namespace:EMEA.ViewModels"
+             xmlns:models="clr-namespace:EMEA.Models"
+             x:DataType="models:TodoMain"
+             Title="MBTodo">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="#f1f1f1"
+                  Offset="0.1" />
+                <GradientStop Color="#e8f1ff"
+                  Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Frame BorderColor="Transparent" Grid.Row="0" Padding="5">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="1,0">
+                    <GradientStop Color="#f1f1f1"
+                  Offset="0.1" />
+                    <GradientStop Color="#e8f1ff"
+                  Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="70"/>
+                    <ColumnDefinition Width="70"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" x:Name="lbNtbName" TextColor="#0066E7" FontFamily="InterExtraBold"
+               FontAttributes="Bold" FontSize="20" Margin="0,0,0,0" Text="TODO LIST"
+               HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Button Text="+ Add" WidthRequest="60" TextColor="#0066E7" Grid.Column="3"
+        Clicked="Add_Click" BackgroundColor="Transparent"  Margin="0,0,10,0"
+                HeightRequest="32" CornerRadius="30" FontFamily="InterMedium"
+                FontAttributes="Bold" Padding="0" FontSize="13" BorderColor="#0066E7"
+                BorderWidth="2" HorizontalOptions="EndAndExpand">
+                </Button>
+                <Button Text="Refresh" WidthRequest="60" TextColor="#0066E7" Grid.Column="2"
+        Clicked="Ref_Click" BackgroundColor="Transparent"  Margin="0,0,10,0"
+                HeightRequest="32" CornerRadius="30" FontFamily="InterMedium"
+                FontAttributes="Bold" Padding="0" FontSize="13" BorderColor="#0066E7"
+                BorderWidth="2" HorizontalOptions="EndAndExpand">
+                </Button>
+                <BoxView HorizontalOptions="Start" Grid.ColumnSpan="4"
+             VerticalOptions="EndAndExpand" HeightRequest="0.5"
+             BackgroundColor="#0066E7"
+             Color="#0066E7" ></BoxView>
+            </Grid>
+
+        </Frame>
+        <Frame Grid.Row="1" Margin="5,10,5,5" Padding="0" BorderColor="Transparent"
+       CornerRadius="40" BackgroundColor="White">
+            <SearchBar x:Name="searchTodo" Placeholder="Search to do list ..."
+               HeightRequest="60" TextColor="#575757" WidthRequest="400"
+               FontFamily="InterMedium" FontSize="16" PlaceholderColor="#cdcdcd"
+               TextChanged="Search_TC"
+               ></SearchBar>
+        </Frame>
+        <Frame Grid.Row="2" Margin="5,5,5,10" BorderColor="Transparent" Padding="0"
+               BackgroundColor="White">
+            <Grid>
+                <CollectionView x:Name="todoView">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical"
+                 />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:TodoMain">
+
+                            <Frame HeightRequest="105" WidthRequest="360" Padding="0" 
+                           BackgroundColor="#ccdbff" Margin="0,10,0,0"
+                       BorderColor="Transparent" HorizontalOptions="Center">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <Label Grid.Row="0" Text="{Binding MainName}" TextColor="Black"
+                                HeightRequest="30" BackgroundColor="Transparent"
+                                 FontFamily="InterSemiBold" WidthRequest="330" CharacterSpacing="-1.3"
+                                FontSize="15" HorizontalOptions="Start" Margin="10,10,0,0"/>
+                                    <Button Grid.Row="0" Text="X" FontAttributes="Bold" 
+                               HorizontalOptions="EndAndExpand" Margin="0,0,10,15"
+                               FontFamily="InterSemiBold" HeightRequest="20" BackgroundColor="Red"
+                                FontSize="15" Padding="0" WidthRequest="20" Clicked="Delete_Click"/>
+                                    <Label x:Name="lblDetail" Grid.Row="1" Text="{Binding DateMain}" TextColor="#8d8d8d"
+                               FontFamily="InterRegular" FontSize="12" FontAttributes="Italic"
+                               Margin="10,0,10,0" MaxLines="6" LineBreakMode="TailTruncation" VerticalOptions="Start"
+                               HorizontalOptions="Start"
+                                   HeightRequest="50"/>
+                                    <Button Grid.RowSpan="2" BackgroundColor="Transparent" 
+                                Clicked="Detail_Click" WidthRequest="320" HorizontalOptions="Start"/>
+                                </Grid>
+
+                            </Frame>
+
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                <Frame BackgroundColor="Transparent" VerticalOptions="End"
+   HorizontalOptions="End" HeightRequest="60" BorderColor="#0066E7" 
+   WidthRequest="60" Margin="30" IsClippedToBounds="True"
+   CornerRadius="75" Padding="0"  >
+                    <Button ImageSource="home.svg" BackgroundColor="Transparent" BorderWidth="1"
+        Margin="0,0,0,0" BorderColor="Blue" WidthRequest="60"
+        HeightRequest="60" CornerRadius="75" Clicked="home_Click" />
+                </Frame>
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentPage>

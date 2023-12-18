@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
+    <PackageReference Include="Microsoft.ML" Version="1.7.1" />
+    <PackageReference Include="Oracle.EntityFrameworkCore" Version="6.21.61" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+  <ItemGroup Label="CodeModel">
+    <None Include="CodeModel.consumption.cs">
+      <DependentUpon>CodeModel.mbconfig</DependentUpon>
+    </None>
+    <None Include="CodeModel.training.cs">
+      <DependentUpon>CodeModel.mbconfig</DependentUpon>
+    </None>
+    <None Include="CodeModel.zip">
+      <DependentUpon>CodeModel.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup Label="MLModel">
+    <None Include="MLModel.consumption.cs">
+      <DependentUpon>MLModel.mbconfig</DependentUpon>
+    </None>
+    <None Include="MLModel.training.cs">
+      <DependentUpon>MLModel.mbconfig</DependentUpon>
+    </None>
+    <None Include="MLModel.zip">
+      <DependentUpon>MLModel.mbconfig</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

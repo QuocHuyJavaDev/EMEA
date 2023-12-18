@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CodeModel_WebApi1.props" />
+</Project>

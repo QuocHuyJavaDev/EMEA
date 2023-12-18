@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EMEA.UI.Desktop.Note.DTNoteDetail"
+             xmlns:viewModels="clr-namespace:EMEA.ViewModels"
+             xmlns:models="clr-namespace:EMEA.Models"
+             xmlns:local="clr-namespace:EMEA.ViewModels"
+             NavigationPage.HasNavigationBar="False"
+             x:DataType="models:Notes"
+             Title="DTNoteDetail">
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False" IsEnabled="False" />
+    </Shell.BackButtonBehavior>
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60" />
+            <RowDefinition Height="7" />
+            <RowDefinition Height="75" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="#fff"
+                      Offset="0.1" />
+                <GradientStop Color="#e8f1ff"
+                      Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Frame BorderColor="Transparent" Grid.Row="0" Padding="0">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="1,0">
+                    <GradientStop Color="#fff"
+                      Offset="0.1" />
+                    <GradientStop Color="#e8f1ff"
+                      Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="75"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <ImageButton Grid.Row="0" Grid.Column="0" Source="back.png" HorizontalOptions="Start" BackgroundColor="Transparent"
+    VerticalOptions="Start" Clicked="back_click"
+             Scale="0.5" Margin="0,0,0,0" Padding="0"/>
+                <Button Grid.Column="2" Text="Save" Margin="10,10,10,10" TextColor="#0066E7"
+                    WidthRequest="75" HorizontalOptions="End"
+                    BackgroundColor="Transparent" FontFamily="InterMedium"
+                    BorderColor="#0066E7" Clicked="Save_Click"/>
+                <ImageButton Grid.Column="3" ClassId="btnFavor" x:Name="btnFavor" Source="starblue.png" HorizontalOptions="Center"
+                              Margin="0,0,0,0" Scale="0.5"
+                         BackgroundColor="Transparent" 
+                         Clicked="favor_Click"/>
+                <ImageButton Grid.Column="3" ClassId="btnUnfavor" x:Name="btnUnfavor" Source="unfar.png"
+                              Margin="0,0,0,0" Scale="0.5"
+                         BackgroundColor="Transparent" HorizontalOptions="Center"
+                          Clicked="unfavor_Click" />
+                <Button Grid.Column="4" Text="Delete" Margin="0,10,10,10" TextColor="#0066E7" 
+                    WidthRequest="75" HorizontalOptions="EndAndExpand"
+                    BackgroundColor="Transparent" FontFamily="InterMedium"
+                    BorderColor="#0066E7" Clicked="Delete_Click"/>
+
+
+            </Grid>
+
+        </Frame>
+        <Frame Grid.Row="1" BackgroundColor="#0066E7" HeightRequest="2" 
+           VerticalOptions="StartAndExpand" Padding="5"/>
+        <StackLayout Grid.Row="2">
+            <Frame  BackgroundColor="White" Padding="0"
+               HorizontalOptions="FillAndExpand" CornerRadius="2" Margin="20,20,20,0"
+               BorderColor="Transparent" HeightRequest="55">
+                <StackLayout Orientation="Horizontal">
+                    <Entry HeightRequest="65" x:Name="entryTit"
+                       FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="FillAndExpand"
+                       Margin="0,0,0,0" FontFamily="InterBold" FontSize="19" TextColor="Black"
+                   />
+                </StackLayout>
+            </Frame>
+
+        </StackLayout >
+        <Frame Grid.Row="3" Margin="20,0,20,0" BorderColor="Transparent" Padding="0"
+               BackgroundColor="White">
+            <ScrollView Margin="0" Padding="0">
+                <Editor x:Name="TextEditor"
+                    TextColor="Black"
+                    FontSize="17"
+                    Placeholder="Enter your note"
+                    AutoSize="TextChanges"
+                   />
+            </ScrollView>
+        </Frame>
+
+    </Grid>
+</ContentPage>

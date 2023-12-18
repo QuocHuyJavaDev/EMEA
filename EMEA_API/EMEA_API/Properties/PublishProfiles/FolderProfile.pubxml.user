@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Publish\EMEA</_PublishTargetUrl>
+    <History>True|2023-12-16T04:33:39.3299617Z;True|2023-12-16T10:49:29.7919134+07:00;True|2023-12-14T20:55:53.7381012+07:00;True|2023-12-14T18:58:49.0094361+07:00;True|2023-12-12T20:33:34.6766213+07:00;True|2023-12-12T19:24:43.5595277+07:00;True|2023-12-12T19:19:31.1302796+07:00;True|2023-12-10T09:58:26.3229579+07:00;True|2023-12-07T20:33:15.0161306+07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Appcontext">
+      <Value>Data Source=%28LQHDB =%28DESCRIPTION =%28ADDRESS = %28PROTOCOL = TCP%29%28HOST = DESKTOP-RPJP4E8%29%28PORT = 1521%29%29%28CONNECT_DATA =%28SERVER = DEDICATED%29%28SERVICE_NAME = lqhdb%29%29%29%29%3buser id=EMEADB%3bpassword=EMEADB</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

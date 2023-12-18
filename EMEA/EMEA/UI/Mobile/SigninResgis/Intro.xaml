@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EMEA.UI.Mobile.SigninResgis.Intro"
+             NavigationPage.HasNavigationBar="False"
+             Title="Intro">
+    <Grid BackgroundColor="#D0D4E3">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="#FFF"
+                      Offset="0.1" />
+                <GradientStop Color="#D0D4E3"
+                      Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+        <Frame Grid.Row="0" Margin="10,10,10,10" CornerRadius="40" BorderColor="#C0AEC3" HasShadow="True">
+            <Frame.Background>
+                <!-- StartPoint defaults to (0,0) -->
+                <LinearGradientBrush EndPoint="1,0">
+                    <GradientStop Color="#ccd4e3"
+                  Offset="0.1" />
+                    <GradientStop Color="#a1baff"
+                  Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Image Source="logo.svg" Aspect="AspectFit" Margin="0" WidthRequest="150"/>
+        </Frame>
+        <StackLayout Grid.Row="1" Margin="0,30,0,0">
+            <Label Text="E-MEA" FontSize="35" TextColor="#0066E7" FontAttributes="Bold"
+               FontFamily="InterExtraBold" CharacterSpacing="-1" HorizontalOptions="Center"
+               />
+            <Label Text="Personal Management Application" FontSize="25" TextColor="#575757" FontAttributes="Bold"
+               FontFamily="InterExtraBold" CharacterSpacing="-1" HorizontalOptions="Center"
+               />
+            <VerticalStackLayout Margin="0,30,0,0">
+                <Label Text="Welcome to E-MEA" FontSize="14" TextColor="#80807e" 
+                   FontAttributes="None" CharacterSpacing="-1" HorizontalOptions="Center"
+                   FontFamily="InterRegular"/>
+                <Label Text="Where you can manage all personal matters, all in one" FontSize="14" TextColor="#80807e" 
+                   FontAttributes="None" CharacterSpacing="-1" HorizontalOptions="Center"
+                    FontFamily="InterRegular"/>
+            </VerticalStackLayout>
+        </StackLayout>
+        <VerticalStackLayout Grid.Row="2" HorizontalOptions="Center" Spacing="10">
+            <Button x:Name="btnRegister"  Text="Register" FontSize="15"
+                    FontAttributes="Bold" TextColor="#ffffff" WidthRequest="350"
+                    HeightRequest="60" BorderColor="#ffffff" BorderWidth="1"
+                    CornerRadius="15" BackgroundColor="#0066E7"
+                    FontFamily="InterBold" Clicked="register_click">
+            </Button>
+            <Button x:Name="btnLogin"  Text="Signin" FontSize="15" FontFamily="InterBold"
+                    FontAttributes="Bold" WidthRequest="350" HeightRequest="60" 
+                    BackgroundColor="White" BorderColor="#0066E7" BorderWidth="1"
+                    TextColor="#424242" CornerRadius="15" Clicked="signin_click"
+                >
+
+            </Button>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>

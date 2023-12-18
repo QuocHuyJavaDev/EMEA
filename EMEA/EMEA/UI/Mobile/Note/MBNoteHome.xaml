@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<uranium:UraniumContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EMEA.UI.Mobile.Note.MBNoteHome"
+             xmlns:uranium="http://schemas.enisn-projects.io/dotnet/maui/uraniumui"
+             xmlns:input="clr-namespace:InputKit.Shared.Controls;assembly=InputKit.Maui"
+             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:m="clr-namespace:UraniumUI.Icons.MaterialIcons;assembly=UraniumUI.Icons.MaterialIcons"
+             Shell.TabBarIsVisible="False"
+             Title="MBNoteHome">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="#fff"
+                  Offset="0.1" />
+                <GradientStop Color="#b9d9fa"
+                  Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="280"/>
+            <RowDefinition Height="235"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+        <Frame Grid.Row="0" Margin="10,10,10,10" CornerRadius="40" BorderColor="#C0AEC3" HasShadow="True">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="1,0">
+                    <GradientStop Color="#a1baff"
+                  Offset="0.1" />
+                    <GradientStop Color="#ccd4e3"
+                  Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <StackLayout>
+                <HorizontalStackLayout>
+                    <Label Text="Welcome back, " HorizontalOptions="FillAndExpand" TextColor="White"
+           FontSize="24" FontAttributes="Bold" FontFamily="InterMedium" Margin="0,0,0,0"/>
+                    <Label x:Name="lblName" HorizontalOptions="FillAndExpand" TextColor="White"
+           FontSize="24" FontAttributes="Bold" FontFamily="InterMedium" Margin="0,0,0,0"/>
+                </HorizontalStackLayout>
+
+                <VerticalStackLayout Spacing="10" Margin="0,30,0,0" HorizontalOptions="Start">
+
+                    <Button Clicked="gotoNTB_Click" Text="Notebooks >>"  BackgroundColor="White" TextColor="#575757"
+                            FontFamily="InterBold" FontSize="15" WidthRequest="180" CornerRadius="30"
+                    />
+                    <Button Text="All Notes >>"  BackgroundColor="White" TextColor="#575757"
+                            FontFamily="InterBold" FontSize="15" WidthRequest="180" CornerRadius="30"
+                            Clicked="gotoNote_Click" />
+                </VerticalStackLayout>
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="2" BorderColor="#0066E7" Margin="10,10,10,0" BackgroundColor="#ffffff">
+            <VerticalStackLayout>
+                <Label Text="FAVOTITE NOTES >" TextColor="#575757" FontFamily="InterExtraBold"
+               FontAttributes="Bold" FontSize="15"/>
+
+            </VerticalStackLayout>
+        </Frame>
+        <Frame Grid.Row="1" Margin="10,10,10,10" BorderColor="#0066E7" BackgroundColor="#ffffff">
+            <VerticalStackLayout>
+                <Label Text="DRAFTING PAPER" TextColor="#575757" FontFamily="InterExtraBold"
+               FontAttributes="Bold" FontSize="15"/>
+                <Frame Padding="0" BorderColor="Transparent" BackgroundColor="#ffe3c1"  >
+                    <Grid ColumnDefinitions="*" RowDefinitions="*">
+                        <ScrollView Margin="5">
+                            <Editor x:Name="TextEditor"
+                        TextColor="#575757"
+                        FontFamily="InterMedium"
+                        FontSize="15"
+                        Placeholder="Enter your drafting ..."
+                        PlaceholderColor="#cdcdcd"         
+                        HeightRequest="180"
+                        AutoSize="TextChanges"/>
+                        </ScrollView>
+                    </Grid>
+                </Frame>
+
+            </VerticalStackLayout>
+
+        </Frame>
+    </Grid>
+    <uranium:UraniumContentPage.Attachments>
+        <material:BottomSheetView BackgroundColor="#c9e8ff">
+
+            <VerticalStackLayout Spacing="5" 
+                            >
+
+                <Button ImageSource="notebook.svg" Text="Notebooks" BackgroundColor="Transparent"                                          HorizontalOptions="CenterAndExpand" BorderColor="#0066E7" FontSize="17"
+                        HeightRequest="50" FontAttributes="Bold" TextColor="Black"
+                        Clicked="gotoNTB_Click"/>
+                <Button ImageSource="note2.svg" Text="All Notes" BackgroundColor="Transparent"                                                 HorizontalOptions="CenterAndExpand" BorderColor="#0066E7" 
+                        HeightRequest="50" FontAttributes="Bold" FontSize="17" TextColor="Black"
+                        Clicked="gotoNote_Click"/>
+
+            </VerticalStackLayout>
+        </material:BottomSheetView>
+    </uranium:UraniumContentPage.Attachments>
+</uranium:UraniumContentPage>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EMEA.UI.Desktop.Category.DTHomePage"
+             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:input="clr-namespace:InputKit.Shared.Controls;assembly=InputKit.Maui"
+             xmlns:m="clr-namespace:UraniumUI.Icons.MaterialIcons;assembly=UraniumUI.Icons.MaterialIcons"
+             xmlns:validation="clr-namespace:InputKit.Shared.Validations;assembly=InputKit.Maui"
+             NavigationPage.HasNavigationBar="False"
+             Title="DTHomePage">
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False" IsEnabled="False" />
+    </Shell.BackButtonBehavior>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="#ffffff"
+                          Offset="0.1" />
+                <GradientStop Color="#ffffff"
+                          Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
+        </Grid.RowDefinitions>
+        <HorizontalStackLayout Grid.Row="0" Margin="20,20,0,0" >
+            <Image Source="logo.png" BackgroundColor="Transparent"
+               Scale="0.6"/>
+            <HorizontalStackLayout VerticalOptions="Start" Margin="0,7,0,0">
+                <Label Text="Hi! " FontFamily="InterBold" FontSize="23"/>
+                <Label x:Name="lblUserName" Text="Huy" FontFamily="InterBold" FontSize="23" CharacterSpacing="-1"/>
+            </HorizontalStackLayout>
+        </HorizontalStackLayout>
+
+        <Frame Grid.Row="1" Margin="10,10,10,10" BorderColor="Transparent" Padding="0"
+           BackgroundColor="Transparent">
+            <Grid RowSpacing="2" BackgroundColor="Transparent">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <material:ButtonView Grid.Column="0" Grid.Row="0" BackgroundColor="#f7cca8"
+                                 Padding="10" >
+
+                    <VerticalStackLayout>
+                        <HorizontalStackLayout Spacing="5">
+                            <Image Source="note.png" BackgroundColor="Transparent" 
+                               HeightRequest="30" />
+                            <Label Text="Note Taking" TextColor="Black" FontAttributes="Bold"
+                               VerticalOptions="CenterAndExpand" FontSize="16"/>
+                        </HorizontalStackLayout>
+                        <BoxView StyleClass="Divider" Color="#fc7605"/>
+
+                        <Label Text="Note everything, review anytime 👋" TextColor="Black"/>
+                    </VerticalStackLayout>
+                </material:ButtonView>
+                <Button x:Name="btnNote" Grid.Column="0" Grid.Row="0" 
+                        HeightRequest="140" BackgroundColor="Transparent"
+                        BorderColor="Transparent" Clicked="GotoNtb_click"/>
+
+                <material:ButtonView Grid.Column="1" Grid.Row="0" BackgroundColor="#bdb1fc" 
+                 Padding="10">
+                    <VerticalStackLayout>
+                        <HorizontalStackLayout Spacing="5">
+                            <Image Source="todolist.png" BackgroundColor="Transparent" 
+               HeightRequest="30" />
+                            <Label Text="Todo list" TextColor="Black" FontAttributes="Bold"
+               VerticalOptions="CenterAndExpand" FontSize="16"/>
+                        </HorizontalStackLayout>
+                        <BoxView StyleClass="Divider" Color="#4b1fff"/>
+
+                        <Label Text="Organizes your work, Increases productivity 👋" TextColor="Black"/>
+                    </VerticalStackLayout>
+                </material:ButtonView>
+                <Button x:Name="btnTodo" Grid.Column="1" Grid.Row="0" HeightRequest="140" BackgroundColor="Transparent"                 BorderColor="Transparent" Clicked="GotoTodo_click"/>
+
+                <material:ButtonView Grid.Column="0" Grid.Row="1" BackgroundColor="#affad4" 
+                 Padding="10">
+                    <VerticalStackLayout>
+                        <HorizontalStackLayout Spacing="5">
+                            <Image Source="calendar.png" BackgroundColor="Transparent" 
+               HeightRequest="30" />
+                            <Label Text="Calendar" TextColor="Black" FontAttributes="Bold"
+               VerticalOptions="CenterAndExpand" FontSize="16"/>
+                        </HorizontalStackLayout>
+                        <BoxView StyleClass="Divider" Color="#02cc68"/>
+
+                        <Label Text="Create smart schedules and reminders 👋" TextColor="Black"/>
+                    </VerticalStackLayout>
+                </material:ButtonView>
+                <Button x:Name="btnSche" Grid.Column="0" Grid.Row="1" HeightRequest="140" BackgroundColor="Transparent" BorderColor="Transparent" Clicked="GotoCalendar_click"/>
+
+                <material:ButtonView  Grid.Column="1" Grid.Row="1" BackgroundColor="#faebaa" 
+                 Padding="10">
+                    <VerticalStackLayout>
+                        <HorizontalStackLayout Spacing="5">
+                            <Image Source="spend.png" BackgroundColor="Transparent" 
+               HeightRequest="30" />
+                            <Label Text="Expense Manager" TextColor="Black" FontAttributes="Bold"
+               VerticalOptions="CenterAndExpand" FontSize="16"/>
+                        </HorizontalStackLayout>
+                        <BoxView StyleClass="Divider" Color="#edbf02"/>
+
+                        <Label Text="Help you manage finances systematically 👋" TextColor="Black"/>
+                    </VerticalStackLayout>
+                </material:ButtonView>
+                <Button x:Name="btnSpend" Grid.Column="1" Grid.Row="1" HeightRequest="140" BackgroundColor="Transparent" BorderColor="Transparent"/>
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentPage>

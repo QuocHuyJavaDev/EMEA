@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EMEA.UI.Mobile.SigninResgis.Detail_Infor"
+             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:input="clr-namespace:InputKit.Shared.Controls;assembly=InputKit.Maui"
+             xmlns:m="clr-namespace:UraniumUI.Icons.MaterialIcons;assembly=UraniumUI.Icons.MaterialIcons"
+             xmlns:validation="clr-namespace:InputKit.Shared.Validations;assembly=InputKit.Maui"
+             
+             Title="Detail_Infor">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="#f1F1F1"
+                              Offset="0.1" />
+                <GradientStop Color="#b9d9fa"
+                              Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="6.5*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" ImageSource="back.svg" WidthRequest="50"  
+                BackgroundColor="Transparent" HorizontalOptions="Start"
+                Clicked="back_click"/>
+        
+        <StackLayout Grid.Row="1" Margin="0,20,0,0" >
+            <Image Source="notebookmain.svg" BackgroundColor="Transparent"
+                   WidthRequest="60"/>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Label Text="Welcome to" FontSize="30" TextColor="#737373"
+                   FontFamily="InterBold" CharacterSpacing="-0.5" HorizontalOptions="Center"
+                   Margin="0,0,0,10"/>
+                <Label Text=" E-Mea" FontSize="30" TextColor="#0066E7" FontAttributes="Bold"
+                   FontFamily="InterExtraBold" CharacterSpacing="-0.5" HorizontalOptions="Center"
+                   Margin="0,0,0,10"/>
+            </HorizontalStackLayout>
+
+            <Label Text="Next, please add your detail information" FontSize="16" TextColor="#737373"
+                   CharacterSpacing="-1" HorizontalOptions="Center" FontFamily="InterRegular"
+                   />
+            <Label Text="to finish register" FontSize="16" TextColor="#737373"
+                   CharacterSpacing="-1" HorizontalOptions="Center" FontFamily="InterRegular"
+                   />
+        </StackLayout>
+
+        <Image Grid.Row="2" Source="logo.svg" BackgroundColor="Transparent"
+               Scale="0.65" HorizontalOptions="Center" Margin="0,20,0,0"/>
+
+        <Border Grid.Row="3">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="20,20,0,0" />
+            </Border.StrokeShape>
+            <Frame>
+                <Frame.Background>
+                    <!-- StartPoint defaults to (0,0) -->
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="#ffffff"
+                                      Offset="0.1" />
+                        <GradientStop Color="#ffffff"
+                                       Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.3*"/>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="1.5*"/>
+                    </Grid.RowDefinitions>
+                    <input:FormView Grid.Row="1" Spacing="30" >
+                        <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                            <material:TextField x:Name="txtFName" Title="First Name" WidthRequest="170"
+                                                Icon="{FontImageSource FontFamily=MaterialRegular,
+                                                Glyph={x:Static m:MaterialRegular.Drive_file_rename_outline}}"
+                                                AccentColor="#0066E7" FontFamily="InterRegular"
+                                                AllowClear="True" BorderColor="#737373">
+                                <validation:RequiredValidation />
+                            </material:TextField>
+                            <material:TextField x:Name="txtLName" Title="Last Name" WidthRequest="170"
+                                                Icon="{FontImageSource FontFamily=MaterialRegular,
+                                                Glyph={x:Static m:MaterialRegular.Drive_file_rename_outline}}"
+                                                AccentColor="#0066E7" FontFamily="InterRegular"
+                                                AllowClear="True" BorderColor="#737373">
+                                <validation:RequiredValidation />
+                                <material:TextField.Attachments>
+                                    <material:TextFieldPasswordShowHideAttachment />
+                                </material:TextField.Attachments>
+                            </material:TextField>
+                        </HorizontalStackLayout>
+
+                        <material:TextField x:Name="txtEmail" Title="E-mail" 
+                                            Icon="{FontImageSource FontFamily=MaterialRegular,
+                                            Glyph={x:Static m:MaterialRegular.Mail}}"
+                                            AccentColor="#0066E7" FontFamily="InterRegular"
+                                            AllowClear="True" BorderColor="#737373">
+                            <validation:RequiredValidation />
+                            <validation:RegexValidation Pattern="{x:Static input:AdvancedEntry.REGEX_EMAIL}" Message="Invalid email address" />
+                        </material:TextField>
+
+                        <material:DatePickerField   x:Name="txtDoB" Title="DoB" AllowClear="True" AccentColor="#0066E7"
+                                                    Icon="{FontImageSource FontFamily=MaterialRegular, 
+                                                    Glyph={x:Static m:MaterialRegular.Calendar_month}}"
+                                                    BorderColor="#737373">
+                            <validation:RequiredValidation />
+                        </material:DatePickerField>
+
+                        <material:RadioButtonGroupView Orientation="Horizontal" Spacing="120"
+                                                       HorizontalOptions="CenterAndExpand">
+                            <material:RadioButton x:Name="radMan" Text="Man" StyleClass="CheckRadioButton"                                                 IsChecked="True" Color="#0066E7"/>
+                            <material:RadioButton x:Name="radWomen" Text="Women" StyleClass="CheckRadioButton" 
+                                                  Color="#0066E7"/>
+                        </material:RadioButtonGroupView>
+
+                    </input:FormView>
+
+                    <HorizontalStackLayout Grid.Row="2" Spacing="50" HorizontalOptions="Center"                                         Margin="0,0,0,100">
+                        <Button x:Name="btnBack2" Text="Back" Scale="1.3"
+                                CornerRadius="10" FontFamily="InterBold" FontAttributes="Bold" 
+                                TextColor="#424242" BackgroundColor="#ffffff" FontSize="11"
+                                WidthRequest="130" BorderColor="#0066E7" BorderWidth="1"
+                                Clicked="back_click"/>
+                        <Button x:Name="btnNext" Text="Next >" Scale="1.3"
+                                CornerRadius="10" FontFamily="InterBold" FontAttributes="Bold" 
+                                TextColor="White" BackgroundColor="#0066E7" FontSize="11"
+                                WidthRequest="130" Clicked="next_click"/>
+                    </HorizontalStackLayout>
+                </Grid>
+                
+            </Frame>
+        </Border>
+        
+        
+    </Grid>
+</ContentPage>

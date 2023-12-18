@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EMEA.UI.Desktop.SigninRegis.DTLogin"
+             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:input="clr-namespace:InputKit.Shared.Controls;assembly=InputKit.Maui"
+             xmlns:m="clr-namespace:UraniumUI.Icons.MaterialIcons;assembly=UraniumUI.Icons.MaterialIcons"
+             xmlns:validation="clr-namespace:InputKit.Shared.Validations;assembly=InputKit.Maui"
+             NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="False"
+             Title="DTLogin">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="#FFF"
+                      Offset="0.1" />
+                <GradientStop Color="#fff"
+                      Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Frame Grid.Column="0" Margin="10,10,10,10"
+           CornerRadius="30" HasShadow="True">
+            <Frame.Background>
+                <!-- StartPoint defaults to (0,0) -->
+                <LinearGradientBrush EndPoint="1,0">
+                    <GradientStop Color="#ccd4e3"
+                      Offset="0.1" />
+                    <GradientStop Color="#a1baff"
+                      Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Image Source="logo.png" Margin="0"
+                   Aspect="AspectFit" Scale="0.25"/>
+        </Frame>
+        <Frame BackgroundColor="Transparent" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="120"></RowDefinition>
+                    <RowDefinition Height="280"></RowDefinition>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <HorizontalStackLayout Grid.Row="0" Margin="5,5,5,5" HorizontalOptions="EndAndExpand">
+                    <Label Text="Not a member?" TextColor="#262626" 
+                       FontFamily="InterMedium" FontSize="13"/>
+                    <Button Text="Register now" BackgroundColor="Transparent"
+                        TextColor="#0066E7" HeightRequest="40" BorderColor="Transparent"
+                        FontSize="13" FontFamily="InterMedium" Margin="0,0,0,22"
+                        WidthRequest="110" Clicked="Register_Click"/>
+                </HorizontalStackLayout>
+                <VerticalStackLayout Grid.Row="1" Margin="0,60,0,0">
+                    <Label Text="E-MEA" FontSize="35" TextColor="#0066E7" FontAttributes="Bold"
+                   FontFamily="InterExtraBold" CharacterSpacing="-0.5" HorizontalOptions="Center"
+                   Margin="0,0,0,10"/>
+                    <Label Text="Hello Again! Welcome back!"  FontSize="19" TextColor="#737373"
+                   CharacterSpacing="-1" HorizontalOptions="Center" FontFamily="InterRegular"/>
+                </VerticalStackLayout>
+                <Grid RowSpacing="5" Grid.Row="2" Margin="20,70,20,0"
+                  WidthRequest="380">
+                    <input:FormView Grid.Row="1" Spacing="20">
+                        <material:TextField x:Name="txtUserName" Title="Name" 
+                    Icon="{FontImageSource FontFamily=MaterialRegular,
+                    Glyph={x:Static m:MaterialRegular.People}}"
+                    AccentColor="#0066E7" FontFamily="InterRegular"
+                    AllowClear="True">
+                            <validation:RequiredValidation />
+                        </material:TextField>
+                        <material:TextField x:Name="txtPassword" Title="Password"  IsPassword="True"
+                    Icon="{FontImageSource FontFamily=MaterialRegular,
+                    Glyph={x:Static m:MaterialRegular.Password}}"
+                    AccentColor="#0066E7" FontFamily="InterRegular"
+                    AllowClear="True">
+                            <validation:RequiredValidation />
+                            <material:TextField.Attachments>
+                                <material:TextFieldPasswordShowHideAttachment />
+                            </material:TextField.Attachments>
+                        </material:TextField>
+                    </input:FormView>
+                </Grid>
+                <Button Margin="30,0,30,0" HeightRequest="55" Grid.Row="3" Text="Sign In"
+            Clicked="Login_Click" BackgroundColor="#0066E7" CornerRadius="15"
+            FontFamily="InterBold" FontAttributes="Bold" TextColor="White"
+                    WidthRequest="360">
+                </Button>
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentPage>

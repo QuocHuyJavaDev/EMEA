@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EMEA.UI.Mobile.SigninResgis.SetPinCode"
+             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:input="clr-namespace:InputKit.Shared.Controls;assembly=InputKit.Maui"
+             xmlns:m="clr-namespace:UraniumUI.Icons.MaterialIcons;assembly=UraniumUI.Icons.MaterialIcons"
+             xmlns:validation="clr-namespace:InputKit.Shared.Validations;assembly=InputKit.Maui"
+             Title="SetPinCode">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="#FFF"
+                          Offset="0.1" />
+                <GradientStop Color="#b9d9fa"
+                          Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="6.5*"/>
+
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" ImageSource="back.svg" WidthRequest="50"  
+            BackgroundColor="Transparent" HorizontalOptions="Start"
+            Clicked="back_click"/>
+
+        <Frame Grid.Row="1" BackgroundColor="Transparent" BorderColor="Transparent">
+            <Image Source="logo.svg" BackgroundColor="Transparent"
+                   Scale="0.8" HorizontalOptions="StartAndExpand" VerticalOptions="EndAndExpand"/>
+        </Frame>
+        
+
+        <Border Grid.Row="2">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="20,20,0,0" />
+            </Border.StrokeShape>
+            <Frame>
+                <Frame.Background>
+                    <!-- StartPoint defaults to (0,0) -->
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="#ffffff"
+                                      Offset="0.1" />
+                        <GradientStop Color="#ffffff"
+                                      Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="9*"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Text="Set PIN code (6 digits)" FontFamily="InterBold" FontSize="20"
+                           TextColor="#0066E7"/>
+                    <VerticalStackLayout Grid.Row="1" Spacing="20">
+                        <Frame BackgroundColor="Transparent" BorderColor="#0066E7"
+                               HeightRequest="50">
+                            <Entry x:Name="txtPIN" Keyboard="Numeric" TextColor="Black"
+                                   SelectionLength="6" MaxLength="6" HeightRequest="55"
+                                   FontSize="20" IsPassword="True">
+                            </Entry>
+                        </Frame>
+
+                        
+                    </VerticalStackLayout>
+                    <Button Grid.Row="2" Clicked="finish_click" StyleClass="FilledButton" Text="Finish up >"
+                            WidthRequest="150" BackgroundColor="#0066E7" HeightRequest="50" Margin="0,0,0,0"
+                            FontFamily="InterBold" FontSize="15" HorizontalOptions="End">
+                    </Button>
+                </Grid>
+            </Frame>
+        </Border>
+    </Grid>
+</ContentPage>

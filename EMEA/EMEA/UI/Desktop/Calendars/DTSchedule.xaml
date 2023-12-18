@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:scheduler="clr-namespace:Syncfusion.Maui.Scheduler;assembly=Syncfusion.Maui.Scheduler"
+             xmlns:local="clr-namespace:EMEA.ViewModels"
+             x:Class="EMEA.UI.Desktop.Calendars.DTSchedule"
+             Title="DTSchedule">
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False" IsEnabled="False" />
+    </Shell.BackButtonBehavior>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Frame BorderColor="Transparent" Grid.Row="0">
+            <Frame.Background>
+                <LinearGradientBrush EndPoint="1,0">
+                    <GradientStop Color="#a1baff"
+                      Offset="0.1" />
+                    <GradientStop Color="#ccd4e3"
+                      Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <HorizontalStackLayout Grid.Column="0" Spacing="10">
+                    <ImageButton Grid.Column="0" Source="back.png"             HorizontalOptions="Start" BackgroundColor="Transparent"
+         VerticalOptions="Start" Clicked="back_click"
+         Scale="0.7" Margin="-20,0,0,0" Padding="0"/>
+                    <Label Text="SCHEDULE" TextColor="#0066E7" FontFamily="InterExtraBold" VerticalOptions="Center"
+           FontAttributes="Bold" FontSize="18" Margin="0,3,0,0" />
+                </HorizontalStackLayout >
+                
+                <Button Grid.Column="1" Text="+ Add" WidthRequest="60" TextColor="#0066E7"
+            Clicked="AddNtb_Click" BackgroundColor="Transparent" HorizontalOptions="End"
+                    HeightRequest="32" CornerRadius="10" FontFamily="InterMedium"
+                    FontAttributes="Bold" Padding="0" FontSize="13" BorderColor="#0066E7"
+                    BorderWidth="2"/>
+            </Grid>
+
+        </Frame>
+        <scheduler:SfScheduler View="Day" Grid.Row="1" x:Name="scheData"
+                       AllowedViews="Day,Agenda,Month,TimelineDay,TimelineMonth,TimelineWeek,
+                       TimelineWorkWeek,Week,WorkWeek"
+                       TodayHighlightBrush="#0066E7"
+                       Tapped="Tap_Events"
+                       >
+
+            <scheduler:SfScheduler.BindingContext>
+                <local:VMSchedule/>
+            </scheduler:SfScheduler.BindingContext>
+
+        </scheduler:SfScheduler>
+    </Grid>
+</ContentPage>

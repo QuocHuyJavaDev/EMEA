@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EMEA.UI.Desktop.DTShell"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarIsVisible="False"
+             xmlns:local="clr-namespace:EMEA.UI.Desktop.SigninRegis"
+             xmlns:view="clr-namespace:EMEA.UI.Desktop.Category"
+             >
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False" IsEnabled="False" />
+    </Shell.BackButtonBehavior>
+    <ShellContent
+    Title="Login Page" FlyoutItemIsVisible="False" Shell.FlyoutBehavior="Disabled"
+    ContentTemplate="{DataTemplate local:DTLogin}"
+    Route="Login"
+    />
+    <TabBar x:Name="PhoneTabs">
+        <TabBar.Style>
+            <Style TargetType="Tab">
+                <Setter Property="Shell.TabBarBackgroundColor"
+                        Value="White" />
+                <Setter Property="Shell.TabBarForegroundColor"
+                        Value="Black" />
+                <Setter Property="Shell.TabBarUnselectedColor"
+                        Value="Blue" />
+            </Style>
+        </TabBar.Style>
+        <Tab Title="Home" Icon="home.png" >
+            <ShellContent ContentTemplate="{DataTemplate view:DTHomePage}" Route="DTHomePage"/>
+        </Tab>
+        <Tab Title="Reminder" Icon="reminder.png">
+            <ShellContent ContentTemplate="{DataTemplate view:DTReminder}"/>
+        </Tab>
+        <Tab Title="AI Chat" Icon="chat.png">
+            <ShellContent ContentTemplate="{DataTemplate view:NewPage2}"/>
+        </Tab>
+        <Tab Title="Setting" Icon="user.png">
+            <ShellContent ContentTemplate="{DataTemplate view:DTMe}"/>
+        </Tab>
+    </TabBar>
+
+</Shell>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EMEA.UI.Desktop.SigninRegis.DTPinCode"
+             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:input="clr-namespace:InputKit.Shared.Controls;assembly=InputKit.Maui"
+             xmlns:m="clr-namespace:UraniumUI.Icons.MaterialIcons;assembly=UraniumUI.Icons.MaterialIcons"
+             xmlns:validation="clr-namespace:InputKit.Shared.Validations;assembly=InputKit.Maui"
+             Title="DTPinCode">
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False" IsEnabled="False" />
+    </Shell.BackButtonBehavior>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="1,0">
+                <GradientStop Color="#FFF"
+                      Offset="0.1" />
+                <GradientStop Color="#b9d9fa"
+                      Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="6.5*"/>
+
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" ImageSource="back.png" WidthRequest="50"  
+                BackgroundColor="Transparent" HorizontalOptions="Start"
+                BorderColor="Transparent" Scale="1.5" Clicked="back_click"/>
+
+        <Frame Grid.Row="1" BackgroundColor="Transparent" BorderColor="Transparent"
+               HorizontalOptions="Center">
+            <Image Source="logo.png" BackgroundColor="Transparent"
+                   Scale="1" HorizontalOptions="StartAndExpand"
+                   VerticalOptions="EndAndExpand"/>
+        </Frame>
+
+
+        <Border Grid.Row="2">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="20,20,0,0" />
+            </Border.StrokeShape>
+            <Frame>
+                <Frame.Background>
+                    <!-- StartPoint defaults to (0,0) -->
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="#ffffff"
+                                  Offset="0.1" />
+                        <GradientStop Color="#ffffff"
+                                  Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="5*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Grid.Row="0" Text="Set PIN code (6 digits)" FontFamily="InterBold" FontSize="20"
+                       TextColor="#0066E7" HorizontalOptions="Center"/>
+                    <VerticalStackLayout Grid.Row="1">
+                        <Frame BackgroundColor="Transparent" BorderColor="#0066E7"
+                               HeightRequest="55" WidthRequest="300" Padding="0"
+                               HorizontalOptions="Center">
+                            <Entry x:Name="txtPIN" Keyboard="Numeric" TextColor="Black"
+                                   SelectionLength="6" MaxLength="6" HeightRequest="55"
+                                   FontSize="20" IsPassword="True" WidthRequest="300">
+                            </Entry>
+                        </Frame>
+
+
+                    </VerticalStackLayout>
+                    <Button Grid.Row="2" Clicked="finish_click" StyleClass="FilledButton" Text="Finish up >"
+                        WidthRequest="150" BackgroundColor="#0066E7" HeightRequest="50" Margin="0,0,0,0"
+                        FontFamily="InterBold" FontSize="15" HorizontalOptions="End">
+                    </Button>
+                </Grid>
+            </Frame>
+        </Border>
+    </Grid>
+</ContentPage>

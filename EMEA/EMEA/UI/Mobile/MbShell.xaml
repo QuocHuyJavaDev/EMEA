@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       x:Class="EMEA.UI.Mobile.MbShell"
+       Title="MbShell"
+       xmlns:intro="clr-namespace:EMEA.UI.Mobile.SigninResgis"
+       xmlns:local="clr-namespace:EMEA.UI.Mobile.Category"
+       NavigationPage.HasNavigationBar="False"
+       Shell.NavBarIsVisible="False">
+
+    <ShellContent Title="Login Page" FlyoutItemIsVisible="False" 
+                  Shell.FlyoutBehavior="Disabled" 
+                  ContentTemplate="{DataTemplate intro:Intro}" 
+                  Route="LoginPage" />
+
+    <TabBar x:Name="PhoneTabs">
+        <Tab Title="Home" Icon="category.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}" Route="HomePage"/>
+        </Tab>
+        <Tab Title="Reminder" Icon="reminder.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:Reminder}"/>
+        </Tab>
+        <Tab Title="AI Chat" Icon="chat.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:NewPage1}"/>
+        </Tab>
+        <Tab Title="Me" Icon="user.svg">
+            <ShellContent ContentTemplate="{DataTemplate local:Me}"/>
+        </Tab>
+    </TabBar>
+</Shell>
